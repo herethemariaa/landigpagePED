@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!--biblioteca de icon-->
+    <link rel="stylesheet" href="style.css">
+    <!--fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <!-- Logo com link para o topo -->
+            <img src="imgs/PED--BRANCO.png" alt="logo" href="#" class="logo">
+            <!-- Menu móvel -->
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul id="nav-list">
+                <li class="nav-item"><a href="#home">Início</a></li>
+                <li class="nav-item"><a href="#infraestrutura">Estrutura</a></li>
+                <li class="nav-item"><a href="#diferenciais">Proposta</a></li>
+                <li class="nav-item dropdown">
+                    <a>Unidades</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://wa.me/+557121367492" target="_blank">Águas Claras</a></li>
+                        <li><a href="https://wa.me/+5571" target="_blank">Pituba</a></li>
+                        <li><a href="https://wa.me/+557191138955" target="_blank">Lauro de Freitas</a></li>
+                        <li><a href="https://wa.me/+5561990444741" target="_blank">Manacá</a></li>
+                        <li><a href="https://wa.me/+557138998313819" target="_blank">Athos By PED</a></li>
+                        <li><a href="https://wa.me/+557191138955" target="_blank">Global</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#matricula">Matrículas</a></li>
+            </ul>
+        </nav>
+        <br>
+        <!-- Seção inicial com imagem principal -->
+        <div id="carousel-container">
+            <!-- Carrossel -->
+            <div id="carousel">
+                <div class="carousel-item active">
+                    <img src="imgs/banner.png" alt="Imagem 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/car-1.jpg" alt="Imagem 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/car-2.jpg" alt="Imagem 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/car-3.jpg" alt="Imagem 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/car-4.jpg" alt="Imagem 5">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/car-5.jpg" alt="Imagem 6">
+                </div>
+                <!-- Controles de navegação -->
+                <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+                <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+            </div>
+        </div>
+        
+        <div id="inicial">
+            <div id="titulo">
+                <h1>Novas Unidades estão chegando!</h1>
+                <h3>Educação Infantil ao Ensino Médio</h3>
+                <div #btn>
+                    <a href="#" target="_blank" class="cta-button">Matrícule-se aqui!</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Seção Infraestrutura -->
+    <main>
+        <section class="info-n1">
+            <div class="info-content">
+                <img src="imgs/valentim-photo.jpg" alt="Foto ilustrativa sobre a PED">
+                <div class="info-text">
+                    <h2>Sobre a PED</h2>
+                    <p>
+                        A PED é uma instituição moderna que tem como missão a oferta de uma educação completa e
+                        sustentável.
+                        Sendo a escola um território de afetos, o acolhimento é um dos nossos valores e eixos centrais.
+                        Prezamos por um lugar de encontros, afetos, ternuras e vínculos reais entre as crianças, suas
+                        famílias e toda a equipe.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="content-flex">
+            <!-- Vídeo do youtube -->
+            <div class="video-container">
+                <iframe src="https://youtu.be/BNLYwCw5F7A?si=JcpUpoazqQFVY9yd" title="Vídeo Institucional"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <!-- Seção de Infraestrutura -->
+            <section class="info-body" id="infraestrutura">
+                <div class="main-n1">
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <img src="imgs/placeholder.png" alt="icon-mapa" class="icons">
+                            <p>6 Unidades Espalhadas pelo Brasil</p>
+                        </div>
+                        <!-- Infraestrutura -->
+                        <div class="info-item">
+                            <img src="imgs/escola.png" alt="icon-escola" class="icons">
+                            <p>Infraestrutura Completa</p>
+                            <button class="toggle-button">↓</button>
+                        </div>
+                    </div>
+                    <!-- Lista de Infraestrutura -->
+                    <div class="list-container">
+                        <ul>
+                            <li>Salas de aula inovadoras</li>
+                            <li>Laboratórios Makers</li>
+                            <li>Laboratórios de Ciências</li>
+                        </ul>
+                        <ul>
+                            <li>Salas Socioemocionais</li>
+                            <li>Ginásios Poliesportivos</li>
+                            <li>Ambientes Climatizados</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Nossos diferenciais -->
+        <section class="diferenciais" id="diferenciais">
+            <div class="main-n2">
+                <h2>Nossos Diferenciais</h2>
+                <div class="box-diferenciais">
+                    <!-- Coluna de diferenciais -->
+                    <ul>
+                        <li>
+                            <img src="imgs/icons/podio.png" alt="Podio">
+                            <span>A melhor proposta educacional de Lauro, para todas as idades.</span>
+                        </li>
+                        <li>
+                            <img src="imgs/icons/empatia.png" alt="Empatia">
+                            <span>Acolhimento socioemocional, com projetos e atividades que estimulam esse
+                                desenvolvimento.</span>
+                        </li>
+                        <li>
+                            <img src="imgs/icons/leitura.png" alt="Leitura">
+                            <span>Formação do pensamento bilíngue, com aulas e interações 100% em inglês.</span>
+                        </li>
+                    </ul>
+                    <!-- Coluna de diferenciais -->
+                    <ul>
+                        <li>
+                            <img src="imgs/icons/comunidade.png" alt="Comunidade">
+                            <span>Vínculos afetivos e comunicação ágil entre a família e a escola.</span>
+                        </li>
+                        <li>
+                            <img src="imgs/icons/livro.png" alt="Livro">
+                            <span>Material didático bem estruturado e de qualidade.</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Parceiros Esportivos -->
+                <div id="esportes">
+                    <div class="parceiros">
+                        <a href="https://nbabasketballschool.com.br/" target="_blank"><img src="imgs/basketschool.png"
+                                alt="Basket School"></a>
+                        <a href="https://interacademybrazil.com.br/" target="_blank"><img src="imgs/interacademy.png"
+                                alt="Inter Academy"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </section>
+        <section class="info-n1">
+            <div class="info-content">
+                <img src="imgs/metodologia.png" alt="Foto ilustrativa sobre a metodologia">
+                <div class="info-text">
+                    <h2>Nossa Metodologia</h2>
+                    <p>
+                        O ABP é uma metodologia com o propósito de tornar o aluno capaz de aprender por meio de problemas propostos que o expõe a situações motivadoras. Assim, o conhecimento é associado de maneira coletiva, com foco em experiências de aprendizagens autênticas. 
+                        Afinal, acreditamos que é através da prática que a experiência se torna ainda mais poderosa.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="matriculas" id="matricula">
+            <div class="carousel">
+                <!-- Início das aulas -->
+                <div class="matricula-item">
+                    <img src="imgs/calendario1.1.png" alt="Calendário">
+                    <p>Início das aulas</p>
+                    <span>Fevereiro/2025</span>
+                </div>
+                <!-- Início das matrículas -->
+                <div class="matricula-item">
+                    <img src="imgs/calendario.png" alt="Calendário">
+                    <p>Início das matrículas</p>
+                    <span>Matrículas Abertas</span>
+                </div>
+            </div>
+        </section>
+        <!-- botão de whatsApp fixo -->
+        <a href="#" target="_blank" id="whatsapp-button">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+        </a>
+
+    </main>
+    <footer class="footer" id="contato">
+        <div class="footer-content">
+            <p>Entre em contato para fazer parte dessa jornada conosco!</p>
+        </div>
+        <div class="direitos">© 2024 Todos os direitos reservados.</div>
+    </footer>
+    <button id="backToTop" title="Voltar ao topo">⬆️</button>
+    <script src="script.js"></script>
+</body>
+</html>
